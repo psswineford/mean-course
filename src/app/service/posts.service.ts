@@ -75,7 +75,7 @@ export class PostsService {
         id: id,
         title: title,
         content: content,
-        imagePath: image
+        imagePath: image as string
       };
     }
     this.http
