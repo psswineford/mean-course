@@ -15,16 +15,10 @@ import { SignupComponent } from './components/signup/signup.component';
 import { AuthInterceptor } from './service/auth-interceptor';
 import { ErrorInterceptor } from './service/error-interceptor';
 import { ErrorComponent } from './components/error/error.component';
+import { AngularMaterialModule } from './angular-material.module';
 
 
-import {MatInputModule} from '@angular/material/input';
-import {MatCardModule} from '@angular/material/card'
-import {MatButtonModule} from '@angular/material/button';
-import { MatToolbarModule} from '@angular/material/toolbar';
-import {MatExpansionModule} from '@angular/material/expansion';
-import { MatProgressSpinnerModule} from '@angular/material/progress-spinner';
-import { MatPaginatorModule } from '@angular/material/paginator';
-import { MatDialogModule } from '@angular/material/dialog';
+
 
 
 
@@ -49,15 +43,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     ReactiveFormsModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatInputModule,
-    MatCardModule,
-    MatButtonModule,
-    MatToolbarModule,
-    MatExpansionModule,
-    MatProgressSpinnerModule,
-    MatPaginatorModule,
-    MatDialogModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularMaterialModule
   ],
   providers: [
     {provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true},
