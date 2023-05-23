@@ -10,7 +10,7 @@ const userRoutes = require("./routes/user")
 
 const app = express();
 
-mongoose.connect("mongodb+srv://meanAdmin:theGr8one@myflixdb.h4dbi.mongodb.net/node-angular?retryWrites=true&w=majority")
+mongoose.connect("mongodb+srv://meanAdmin:" + process.env.MONGO_ATLAS_PW +"@myflixdb.h4dbi.mongodb.net/node-angular?retryWrites=true&w=majority")
 .then(() => {
   console.log('Connected to the database');
 })
